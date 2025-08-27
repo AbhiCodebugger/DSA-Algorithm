@@ -1,17 +1,17 @@
 #include <iostream>
 using namespace std;
 
-// int sumOfDigit(int num){
-//     int digitSum = 0;
-//     while(num > 0){
-//        int lastDigit = num % 10;
-//        cout << "Last Digit: " << lastDigit << endl; // Debugging output
-//         num = num / 10;
-//         cout << "Remaining Number: " << num << endl; // Debugging output
-//         digitSum += lastDigit;
-//     }
-//     return digitSum;
-// }
+int sumOfDigit(int num){
+    int digitSum = 0;
+    while(num > 0){
+       int lastDigit = num % 10;
+       cout << "Last Digit: " << lastDigit << endl; // Debugging output
+        num = num / 10;
+        cout << "Remaining Number: " << num << endl; // Debugging output
+        digitSum += lastDigit;
+    }
+    return digitSum;
+}
 
 int factorial(int num){
     int fact = 1;
@@ -53,11 +53,11 @@ int main()
 {
 
     // cout << findPrimeNumber(20) << endl; 
-    // int number;
-    // cout << "Enter a number: ";
-    // cin >> number;
-    // int result = sumOfDigit(number);
-    // cout << "The sum of the digits is: " << result << endl;
+    int number;
+    cout << "Enter a number: ";
+    cin >> number;
+    int result = sumOfDigit(number);
+    cout << "The sum of the digits is: " << result << endl;
     // cout << isPrime(12) << endl;
     // int n, r;
     // cout << "Enter n and r for nCr: ";
